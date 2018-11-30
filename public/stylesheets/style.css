@@ -1,9 +1,34 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: blue;
+  background-color: silver;
 }
 
 a {
   color: #00B7FF;
+}
+.card {
+  float : left;
+  margin: 10px;
+  height: 470px;; 
+  
+}
+.card-img-top{
+  height: 250px;
+  width: 250px;
+  padding: 17px
+}
+.delete, .update{
+  float : left;
+  margin-left: 20px;
+  
+}
+
+.submit{
+  margin-left: 0px;
+}
+#icon{
+float: left;
+padding-left: 40px;
+  
 }

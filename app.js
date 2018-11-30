@@ -6,6 +6,8 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const happyhomesRouter = require('./routes/pg');
+
 // const methodOverride = require('method-override')
 // const passport = require('passport')
 // const LocalStrategy = require('passport-local');
@@ -50,6 +52,7 @@ app.use(require('express-session')({ secret: 'keyboard cat', resave: true , save
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/pg',happyhomesRouter)
 
 
 // catch 404 and forward to error handler

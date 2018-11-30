@@ -1,0 +1,57 @@
+<% include ./partials/header.ejs %>
+
+<form class="text-center border border-light p-5" id="addU"  method="POST">
+
+    <p class="h4 mb-4">Add New Home</p>
+    
+    <div class="form-row mb-4">
+        <div class="col">
+            <input id="add1" type="text" name="address" class="form-control" placeholder="Address">
+        </div>
+        <div class="col">
+            <input id="add2" type="text" name="city" class="form-control" placeholder="City">
+        </div>
+        <div class="col">
+            <input id="add8" type="text" name="price" class="form-control" placeholder="Price">
+        </div>
+    </div>
+<div class="form-row mb-4">
+    <div class="col">
+
+        <input id="add3" type="text" name="latitude" class="form-control" placeholder="Latitude">
+    </div>
+    <div class="col">
+
+        <input id="add4" type="text" name="longitude" class="form-control" placeholder="Longitude">
+    </div>
+    <div class="col">
+
+            <input id="add5" type="text" name="bedrooms" class="form-control" placeholder="Bedroooms">
+        </div>
+        <div class="col">
+
+                <input id="add6" type="text" name="bathrooms" class="form-control" placeholder="Bthrooms">
+            </div>
+    <div class="col">
+
+            <input id="add7" type="text" name="carspaces" class="form-control" placeholder="Carspaces">
+        </div>
+</div>
+
+    <input id="add9" type="text" name="picture" class="form-control mb-4" placeholder="Image URL">
+    <!-- <input id="add10" type="text" name="picture" class="form-control mb-4" placeholder="Image URL">
+    <input id="add11" type="text" name="picture" class="form-control mb-4" placeholder="Image URL"> -->
+
+
+    <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
+
+</form>
+<div class="content"></div>
+<script>
+$('#addU').hide()
+</script>
+
+<script src="/public/javascript/pg.js"></script>
+
+
+<% include ./partials/footer.ejs %>
