@@ -1,34 +1,31 @@
 body {
-
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: silver;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 .card {
-  float : left;
+  float: left;
   margin: 10px;
-  height: 470px;; 
-  
+  height: 470px;
 }
-.card-img-top{
+.card-img-top {
   height: 250px;
   width: 250px;
-  padding: 17px
+  padding: 17px;
 }
-.delete, .update{
-  float : left;
+.delete,
+.update {
+  float: left;
   margin-left: 20px;
-  
 }
 
-.submit{
+.submit {
   margin-left: 0px;
 }
-#icon{
-float: left;
-padding-left: 40px;
-  
+#icon {
+  float: left;
+  padding-left: 40px;
 }
