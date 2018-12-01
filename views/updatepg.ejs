@@ -1,91 +1,52 @@
 <% include ./partials/header.ejs %>
 
-<form
-  class="text-center border border-light p-5"
-  id="addProfile"
-  action="/pg"
-  method="POST"
->
-  <p class="h4 mb-4">Add New Home</p>
+<form class="text-center border border-light p-5" id="addProfile" action='/pg' method="POST">
 
-  <div class="form-row mb-4">
-    <div class="col">
-      <input
-        type="text"
-        name="address"
-        class="form-control"
-        placeholder="Address"
-      />
+    <p class="h4 mb-4">Add New Home</p>
+    
+    <div class="form-row mb-4">
+        <div class="col">
+            <input type="text" name="address" class="form-control" placeholder="Address">
+        </div>
+        <div class="col">
+            <input type="text" name="city" class="form-control" placeholder="City">
+        </div>
+        <div class="col">
+                <input type="text" name="price" class="form-control" placeholder="Price">
+            </div>
     </div>
-    <div class="col">
-      <input type="text" name="city" class="form-control" placeholder="City" />
-    </div>
-    <div class="col">
-      <input
-        type="text"
-        name="price"
-        class="form-control"
-        placeholder="Price"
-      />
-    </div>
-  </div>
-  <div class="form-row mb-4">
-    <div class="col">
-      <input
-        type="text"
-        name="latitude"
-        class="form-control"
-        placeholder="Latitude"
-      />
-    </div>
-    <div class="col">
-      <input
-        type="text"
-        name="longitude"
-        class="form-control"
-        placeholder="Longitude"
-      />
-    </div>
-    <div class="col">
-      <input
-        type="text"
-        name="bedrooms"
-        class="form-control"
-        placeholder="Bedrooms"
-      />
-    </div>
-    <div class="col">
-      <input
-        type="text"
-        name="bathrooms"
-        class="form-control"
-        placeholder="Bathrooms"
-      />
-    </div>
-    <div class="col">
-      <input
-        type="text"
-        name="carspaces"
-        class="form-control"
-        placeholder="Car Space"
-      />
-    </div>
-  </div>
+    <div class="form-row mb-4">
+            <div class="col">
 
-  <input
-    type="text"
-    name="picture"
-    class="form-control mb-4"
-    placeholder="Image URL"
-  />
-  <!--
+                    <input type="text" name="latitude" class="form-control" placeholder="Latitude">
+                </div>
+        <div class="col">
+
+            <input type="text" name="longitude" class="form-control" placeholder="Longitude">
+        </div>
+        <div class="col">
+
+            <input type="text" name="bedrooms" class="form-control" placeholder="Bedrooms">
+        </div>
+        <div class="col">
+
+            <input type="text" name="bathrooms" class="form-control" placeholder="Bathrooms">
+        </div>
+        <div class="col">
+
+            <input type="text" name="carspaces" class="form-control" placeholder="Car Space">
+        </div>
+    </div>
+
     <input type="text" name="picture" class="form-control mb-4" placeholder="Image URL">
-    <input type="text" name="picture" class="form-control mb-4" placeholder="Image URL">
-  -->
+    <!-- <input type="text" name="picture" class="form-control mb-4" placeholder="Image URL">
+    <input type="text" name="picture" class="form-control mb-4" placeholder="Image URL"> -->
 
-  <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
+    <button class="btn btn-info my-4 btn-block" type="submit">Submit</button>
+
 </form>
 
 <script src="/public/javascript/pg.js"></script>
+
 
 <% include ./partials/footer.ejs %>
