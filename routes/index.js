@@ -12,4 +12,3 @@ router.get("/updatepg", (req, res) => {
   res.render("updatepg");
 });
 module.exports = router;
-
